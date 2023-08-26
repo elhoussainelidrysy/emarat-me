@@ -1627,9 +1627,15 @@ body,
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
+@media screen and (max-width: 768px)  {
+.columns {  
+  flex-direction: column;
+}
+
+}
 .columns.gutter-none {
     margin-left: var(--space-none);
     margin-right: var(--space-none);
@@ -1649,7 +1655,7 @@ body,
     margin-left: calc(-1 * var(--space-base) / 2);
     margin-right: calc(-1 * var(--space-base) / 2);
 }
-
+ 
 .columns.gutter-m {
     margin-left: calc(-1 * var(--space-m) / 2);
     margin-right: calc(-1 * var(--space-m) / 2);

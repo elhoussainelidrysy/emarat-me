@@ -1,7 +1,7 @@
 $(document).ready(()=>{
 $("#btnLien").on("click",(ev)=>{
     ev.preventDefault();
-    window.location.assign("payment.html");
+    window.location.assign("html/payment.html");
 });
 
 fetch('https://api.ipify.org/?format=json')
