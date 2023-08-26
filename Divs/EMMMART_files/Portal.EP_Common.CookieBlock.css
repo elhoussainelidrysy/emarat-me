@@ -1,0 +1,9 @@
+﻿.Radius-cookie{
+    border-radius: 7px !important;
+ width: 26% ;
+   position: fixed;
+    bottom: 7%;
+    left: 8%;
+    border: solid 1px var(--color-primary);
+    z-index: 2500;
+}

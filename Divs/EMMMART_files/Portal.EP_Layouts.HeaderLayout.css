@@ -1,0 +1,13 @@
+﻿.HeaderLayout {
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    direction: ltr!important;
+}
+
+.CardBackground.card-background {
+    min-height: 400px!important;
+    max-height: 400px!important;
+    align-items: initial;
+}
+

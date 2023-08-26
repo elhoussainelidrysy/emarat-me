@@ -1,0 +1,13 @@
+﻿.ModalContent{
+    border-bottom-color: rbga(0,0,0,0)!important;
+}
+.rsbtn .rs-player-loadindicator {
+    left: 0 !important;
+}
+.phone .accessibility-popup .popover-bottom{
+    top: 55px!important;
+    z-index: 5!important;
+    transform: translate(-60%, 0%)!important;
+    right: 0px!important;
+    left: 0px!important;
+}
